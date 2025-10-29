@@ -38,7 +38,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv(credentialsId: 'Prajwal-sonarcloud-token', installationName: 'prajwal-sonarqube') {
+                withSonarQubeEnv(credentialsId: 'Prajwal-SonarCload', installationName: 'Prajwal-SonarCload') {
                     sh '''#!/bin/bash
                         set -eux
                         echo "=== SonarQube installation ==="
